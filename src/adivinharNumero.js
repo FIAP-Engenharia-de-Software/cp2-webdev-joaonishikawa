@@ -8,11 +8,11 @@
 // - Retornar `"Errou! Tente novamente!"` se o palpite estiver incorreto.
 
 function adivinharNumero(max, palpite) {
-  numGerado = Math.random(0, max)
+  numGerado = Math.random(max)
   if(palpite == numGerado) {
-    return "Acertou"
+    return "Acertou!"
   } else {
-    return `Errou, o número gerado era ${numGerado}`
+    return `Errou! Tente novamente!`
   }
 }
 
